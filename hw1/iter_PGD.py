@@ -29,7 +29,8 @@ assert(original_class == 2)
 
 # PGD initialization: random point within the eps-ball around x
 adv_x = (x.clone().detach() +
-         torch.zeros_like(x).normal_(mean=0.0, std=1/np.sqrt(10)).clamp(-eps, eps))
+         torch.zeros_like(x)
+         .normal_(mean=0.0, std=1/np.sqrt(10)).clamp(-eps, eps))
 assert( torch.norm((x-adv_x), p=float('inf')) <= epsReal)
 
 num_steps = 10000
