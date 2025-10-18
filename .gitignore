@@ -1,5 +1,5 @@
 mnist_data/
-cifar10-data/
+cifar10_data/
 models/
 
 # Python bytecode
