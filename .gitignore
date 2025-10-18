@@ -1,4 +1,6 @@
 mnist_data/
+cifar10-data/
+models/
 
 # Python bytecode
 __pycache__/
