@@ -1,7 +1,6 @@
 mnist_data/
 cifar10_data/
 models/
-tmp.*
 
 # Python bytecode
 __pycache__/
